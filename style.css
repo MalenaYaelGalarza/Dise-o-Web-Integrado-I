@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f2f2f2, #e0e0e0);
+}
+
+.principal {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentacion {
+  width: 800px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentacion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.presentacion h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.presentacion h2 {
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.presentacion h3 {
+  margin: 25px 0 15px;
+  font-size: 20px;
+  color: #0078d7;
+}
+
+.menu-clases,
+.menu-practicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.boton {
+  padding: 12px 20px;
+  background-color: #0078d7;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .presentacion {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .menu-clases,
+  .menu-practicos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .boton {
+    width: 100%;
+  }
+}
+

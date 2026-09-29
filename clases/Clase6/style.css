@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1rf 1rf;
+    grid-template-areas: 
+    "todo todo todo"
+    "todo nada nada"
+    "todo nada nada"
+    ;
+}
+.articulo{
+    background-color: yellow;
+    grid-area: todo;
+}
+.articulo-2{
+    background-color: green;
+    grid-area: nada;
+}
+.boton-volver {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #ff4d4d; /* rojo suave */
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-volver:hover {
+  background-color: #cc0000; /* rojo más intenso */
+  transform: scale(1.05);
+}
+
+.volver {
+  margin-top: 25px;
+}
